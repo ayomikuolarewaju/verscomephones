@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.05fr_1fr] md:pb-28 md:pt-24">
         <div className="reveal">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-forest/20 bg-white/60 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-forest">
-            <span className="h-1.5 w-1.5 rounded-full bg-forest" /> New stock available
+            <span className="h-1.5 w-1.5 rounded-full bg-forest" /> Limited stock · Lagos
           </p>
           <h1 className="font-display text-5xl leading-[1.02] tracking-tight text-ink sm:text-6xl lg:text-7xl">
             Big screens.<br />
@@ -42,7 +42,7 @@ export default function Hero() {
             />
           </div>
           <div className="absolute -bottom-5 left-5 rounded-2xl bg-ink px-5 py-3 text-cream shadow-xl">
-            <p className="font-display text-2xl leading-none">5000mAh</p>
+            <p className="font-display text-2xl leading-none">5,000mAh</p>
             <p className="mt-1 text-xs text-cream/60">All-day battery</p>
           </div>
         </div>

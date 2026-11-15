@@ -28,7 +28,12 @@ export default function Products() {
               </div>
 
               <div>
-                <span className="rounded-full bg-forest/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-forest">{p.tag}</span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-forest/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-forest">{p.tag}</span>
+                  {p.stock ? (
+                    <span className="rounded-full bg-gold/30 px-3 py-1 text-xs font-medium uppercase tracking-widest text-gold-deep">Only {p.stock} left</span>
+                  ) : null}
+                </div>
                 <h3 className="mt-4 font-display text-4xl tracking-tight md:text-5xl">{p.name}</h3>
                 <p className="mt-4 max-w-md text-lg leading-relaxed text-ink/65">{p.blurb}</p>
 
@@ -54,7 +59,7 @@ export default function Products() {
 
                 <div className="mt-8 flex flex-wrap items-center gap-5">
                   <OrderButton product={p.name} />
-                  <p className="font-display text-2xl">{p.price ?? <span className="text-base text-ink/55">Chat for today&apos;s price</span>}</p>
+                  <p className="font-display text-3xl">{p.price ?? <span className="text-base text-ink/55">Chat for today&apos;s price</span>}</p>
                 </div>
               </div>
             </article>
