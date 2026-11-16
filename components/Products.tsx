@@ -36,6 +36,7 @@ export default function Products() {
                 </div>
                 <h3 className="mt-4 font-display text-4xl tracking-tight md:text-5xl">{p.name}</h3>
                 <p className="mt-4 max-w-md text-lg leading-relaxed text-ink/65">{p.blurb}</p>
+                <p className="mt-3 text-sm text-ink/55"><span className="font-medium text-ink">Best for:</span> {p.bestFor}</p>
 
                 <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-ink/10 ring-1 ring-ink/10">
                   {p.specs.map((s) => (
@@ -57,9 +58,16 @@ export default function Products() {
                   </ul>
                 </div>
 
-                <div className="mt-8 flex flex-wrap items-center gap-5">
+                <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
                   <OrderButton product={p.name} />
-                  <p className="font-display text-3xl">{p.price ?? <span className="text-base text-ink/55">Chat for today&apos;s price</span>}</p>
+                  <div>
+                    <p className="font-display text-3xl">{p.price ?? <span className="text-base text-ink/55">Chat for today&apos;s price</span>}</p>
+                    {p.wasPrice ? (
+                      <p className="mt-0.5 text-sm text-ink/50">
+                        <s>{p.wasPrice}</s> · <span className="font-medium text-forest">Save {p.save}</span>
+                      </p>
+                    ) : null}
+                  </div>
                 </div>
               </div>
             </article>

@@ -1,7 +1,7 @@
 const steps = [
   { t: "Pick your phone", d: "Choose the model and colour you like from the collection above." },
   { t: "Tap the button", d: "WhatsApp opens with your message already written. Just hit send." },
-  { t: "Confirm & receive", d: "We confirm stock, price and delivery with you, then your phone is on its way." },
+  { t: "Get it delivered", d: "Send your Lagos delivery address. We confirm and bring it to your door, free." },
 ];
 
 export default function HowToOrder() {

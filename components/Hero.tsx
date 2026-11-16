@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.05fr_1fr] md:pb-28 md:pt-24">
         <div className="reveal">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-forest/20 bg-white/60 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-forest">
-            <span className="h-1.5 w-1.5 rounded-full bg-forest" /> Limited stock · Lagos
+            <span className="h-1.5 w-1.5 rounded-full bg-forest" /> Promo: save ₦55,000 · Limited stock
           </p>
           <h1 className="font-display text-5xl leading-[1.02] tracking-tight text-ink sm:text-6xl lg:text-7xl">
             Big screens.<br />
@@ -17,7 +17,7 @@ export default function Hero() {
             <em className="text-forest">One chat</em> away.
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/65">
-            Brand-new, boxed smartphones in elegant finishes. Pick your phone, tap the button, and we handle the rest on WhatsApp.
+            Brand-new, factory-sealed smartphones with free delivery anywhere in Lagos. Pick your phone, tap the button, and we handle the rest on WhatsApp.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <OrderButton />
@@ -25,7 +25,7 @@ export default function Hero() {
               Browse phones →
             </a>
           </div>
-          <p className="mt-6 text-sm text-ink/50">{store.location} · Replies fast</p>
+          <p className="mt-6 text-sm text-ink/50">{store.location} · Free delivery in Lagos · Nationwide shipping</p>
         </div>
 
         <div className="reveal relative [animation-delay:.15s]">
@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="overflow-hidden rounded-[2rem] bg-white p-2 shadow-[0_40px_80px_-30px_rgba(20,40,30,.45)] ring-1 ring-ink/5">
             <Image
               src="/images/arbutus-colours.jpg"
-              alt="Arbutus Ultra phones in champagne, titanium and black"
+              alt="Arbutus 5G phones in champagne, titanium and black"
               width={1080}
               height={909}
               priority
