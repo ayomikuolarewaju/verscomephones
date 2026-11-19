@@ -3,7 +3,7 @@
 // ─────────────────────────────────────────────────────────────
 
 export const store = {
-  name: "Your Store Name",
+  name: "Broadlink Store",
   tagline: "Premium phones, ordered in one chat.",
   // International format, digits only, no "+" (e.g. Nigeria: 234 + number without leading 0)
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "2348000000000",
